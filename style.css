@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+  padding: 20px;
+}
+
+.item {
+  margin: 10px 0;
+}
+
+button {
+  margin-left: 10px;
+}
+
+#cart {
+  margin: 10px 0;
+  list-style-type: none;
+  padding: 0;
+}

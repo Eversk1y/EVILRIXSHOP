@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Магазин</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Магазин</h1>
+  <div id="items">
+    <!-- товары -->
+    <div class="item" data-title="Хлеб" data-price="40">🍞 Хлеб — 40₽ <button>Добавить</button></div>
+    <div class="item" data-title="Молоко" data-price="70">🥛 Молоко — 70₽ <button>Добавить</button></div>
+    <div class="item" data-title="Сыр" data-price="200">🧀 Сыр — 200₽ <button>Добавить</button></div>
+  </div>
+
+  <h2>Корзина</h2>
+  <ul id="cart"></ul>
+  <p>Комментарий (например, "Сдача с 500₽"):</p>
+  <input id="comment" placeholder="Комментарий" />
+
+  <button id="submit">Оформить заказ</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
