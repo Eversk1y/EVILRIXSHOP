@@ -28,3 +28,19 @@ document.getElementById("submit").addEventListener("click", () => {
   Telegram.WebApp.sendData(JSON.stringify(data));
   Telegram.WebApp.close();
 });
+
+
+const tg = window.Telegram.WebApp;
+tg.expand(); // раскрываем окно WebApp
+
+document.querySelector('#submit-btn').addEventListener('click', () => {
+    const cartItems = Array.from(document.querySelectorAll('.cart-item')).map(el => el.textContent);
+    const comment = document.querySelector('#comment').value;
+
+    const orderData = {
+        items: cartItems,
+        comment: comment
+    };
+
+    tg.sendData(JSON.stringify(orderData));
+});
